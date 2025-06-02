@@ -30,7 +30,7 @@
 
 #### So geht die Installation Schritt für Schritt (Linux)
 
-1. **Hol dir das `<span class="selected">.deb</span>`-Paket:** Schau einfach auf der [Releases-Seite](https://github.com/IhrBenutzername/IhrRepoName/releases "null") deines GitHub-Repos vorbei und lade die neueste `<span class="selected">hardware-info-service_X.Y.Z_amd64.deb</span>`-Datei runter.
+1. **Hol dir das `<span class="selected">.deb</span>`-Paket:** Schau einfach auf der [Releases-Seite](https://github.com/HTSW-SMW/Public_AssetManager/releases) deines GitHub-Repos vorbei und lade die neueste `<span class="selected">hardware-info-service_X.Y.Z_amd64.deb</span>`-Datei runter.
 2. **Installier das Paket:** Öffne ein Terminal auf deinem Linux-System und gib diesen Befehl ein (denk dran, `<span class="selected">X.Y.Z</span>` durch die aktuelle Versionsnummer zu ersetzen):
    ```
    sudo apt install ./hardware-info-service_X.Y.Z_amd64.deb
