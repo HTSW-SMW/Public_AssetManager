@@ -17,21 +17,21 @@
 
 ### Für Linux-Systeme
 
-**Der Dienst für Linux kommt als Debian-Paket (**`<span class="selected">.deb</span>`), was eine einfache Installation auf Debian-basierten Systemen (wie Ubuntu) ermöglicht.
+**Der Dienst für Linux kommt als Debian-Paket (**`.deb`), was eine einfache Installation auf Debian-basierten Systemen (wie Ubuntu) ermöglicht.
 
 #### Voraussetzungen auf dem Linux-System
 
-**Damit der Dienst auch wirklich alle Hardware-Infos abrufen kann, braucht er ein paar Helfer-Tools. Aber keine Sorge: Die sind als Abhängigkeiten im **`<span class="selected">.deb</span>`-Paket hinterlegt und werden automatisch mitinstalliert:
+**Damit der Dienst auch wirklich alle Hardware-Infos abrufen kann, braucht er ein paar Helfer-Tools. Aber keine Sorge: Die sind als Abhängigkeiten im **`.deb`-Paket hinterlegt und werden automatisch mitinstalliert:
 
-* `<span class="selected">dmidecode</span>`: Für die detaillierten RAM- und Motherboard-Infos.
-* `<span class="selected">util-linux</span>`: Da ist `<span class="selected">lsblk</span>` drin, für die Festplatten-Infos.
-* `<span class="selected">iproute2</span>`: Enthält `<span class="selected">ip a</span>` für die Netzwerkadapter-Infos.
-* `<span class="selected">pciutils</span>`: Hier steckt `<span class="selected">lspci</span>` drin, für die GPU-Infos.
+* `dmidecode`: Für die detaillierten RAM- und Motherboard-Infos.
+* `util-linux`: Da ist `lsblk` drin, für die Festplatten-Infos.
+* `iproute2`: Enthält `ip a` für die Netzwerkadapter-Infos.
+* `pciutils`: Hier steckt `lspci` drin, für die GPU-Infos.
 
 #### So geht die Installation Schritt für Schritt (Linux)
 
-1. **Hol dir das `<span class="selected">.deb</span>`-Paket:** Schau einfach auf der [Releases-Seite](https://github.com/HTSW-SMW/Public_AssetManager/releases) deines GitHub-Repos vorbei und lade die neueste `<span class="selected">hardware-info-service_X.Y.Z_amd64.deb</span>`-Datei runter.
-2. **Installier das Paket:** Öffne ein Terminal auf deinem Linux-System und gib diesen Befehl ein (denk dran, `<span class="selected">X.Y.Z</span>` durch die aktuelle Versionsnummer zu ersetzen):
+1. **Hol dir das `.deb`-Paket:** Schau einfach auf der [Releases-Seite](https://github.com/HTSW-SMW/Public_AssetManager/releases) deines GitHub-Repos vorbei und lade die neueste `hardware-info-service_X.Y.Z_amd64.deb`-Datei runter.
+2. **Installier das Paket:** Öffne ein Terminal auf deinem Linux-System und gib diesen Befehl ein (denk dran, `X.Y.Z` durch die aktuelle Versionsnummer zu ersetzen):
    ```
    sudo apt install ./hardware-info-service_X.Y.Z_amd64.deb
    ```apt` kümmert sich dann um alles: Die benötigten Abhängigkeiten werden installiert und der Dienst wird eingerichtet. Fertig!
@@ -57,19 +57,19 @@ journalctl -u hardware-info-service.service -f
 
 ### Für Windows-Systeme
 
-**Für Windows gibt es eine ausführbare **`<span class="selected">.exe</span>`-Datei, die du direkt über die Kommandozeile steuern kannst, um sie zu installieren, zu starten oder zu stoppen.
+**Für Windows gibt es eine ausführbare **`.exe`-Datei, die du direkt über die Kommandozeile steuern kannst, um sie zu installieren, zu starten oder zu stoppen.
 
 #### So geht die Installation Schritt für Schritt (Windows)
 
-1. **Hol dir die `<span class="selected">.exe</span>`-Datei:** Geh auf die [Releases-Seite](https://github.com/HTSW-SMW/Public_AssetManager/releases) deines GitHub-Repos und lade die `<span class="selected">AssetManager_Service.exe</span>`-Datei für Windows runter.
-2. **Installiere den Dienst:** Öffne die **Eingabeaufforderung (CMD) oder PowerShell als Administrator****. Dann navigiere zu dem Ordner, in den du die **`<span class="selected">.exe</span>`-Datei heruntergeladen hast. Führe den Dienstbefehl mit dem `<span class="selected">install</span>`-Parameter aus:
+1. **Hol dir die `.exe`-Datei:** Geh auf die [Releases-Seite](https://github.com/HTSW-SMW/Public_AssetManager/releases) deines GitHub-Repos und lade die `AssetManager_Service.exe`-Datei für Windows runter.
+2. **Installiere den Dienst:** Öffne die **Eingabeaufforderung (CMD) oder PowerShell als Administrator****. Dann navigiere zu dem Ordner, in den du die **`.exe`-Datei heruntergeladen hast. Führe den Dienstbefehl mit dem `install`-Parameter aus:
 
    ```
    C:\Pfad\zu\deinem\Download\AssetManager_Service.exe --install
 
    ```
 
-   **(Ersetze **`<span class="selected">C:\Pfad\zu\deinem\Download\</span>` durch den tatsächlichen Pfad zur Datei.)
+   **(Ersetze **`C:\Pfad\zu\deinem\Download\` durch den tatsächlichen Pfad zur Datei.)
 3. **Starte den Dienst:** Nach der Installation kannst du den Dienst direkt starten:
 
    ```
