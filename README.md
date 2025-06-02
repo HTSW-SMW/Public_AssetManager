@@ -61,7 +61,7 @@ journalctl -u hardware-info-service.service -f
 
 #### So geht die Installation Schritt für Schritt (Windows)
 
-1. **Hol dir die `<span class="selected">.exe</span>`-Datei:** Geh auf die [Releases-Seite](https://github.com/IhrBenutzername/IhrRepoName/releases "null") deines GitHub-Repos und lade die `<span class="selected">AssetManager_Service.exe</span>`-Datei für Windows runter.
+1. **Hol dir die `<span class="selected">.exe</span>`-Datei:** Geh auf die [Releases-Seite](https://github.com/HTSW-SMW/Public_AssetManager/releases) deines GitHub-Repos und lade die `<span class="selected">AssetManager_Service.exe</span>`-Datei für Windows runter.
 2. **Installiere den Dienst:** Öffne die **Eingabeaufforderung (CMD) oder PowerShell als Administrator****. Dann navigiere zu dem Ordner, in den du die **`<span class="selected">.exe</span>`-Datei heruntergeladen hast. Führe den Dienstbefehl mit dem `<span class="selected">install</span>`-Parameter aus:
 
    ```
