@@ -79,7 +79,7 @@ journalctl -u hardware-info-service.service -f
 
    **Alternativ kannst du auch in die Windows "Dienste"-Verwaltung (services.msc) gehen, dort nach "HCPSMW\_ASSETMGR\_Service" suchen und ihn starten.**
 
-oder aber du fürst folgendes aus:
+oder aber du führst folgendes aus:
   ```
   C:\Pfad\zu\deinem\Download\AssetManager_Service.exe --install --start
   ```
